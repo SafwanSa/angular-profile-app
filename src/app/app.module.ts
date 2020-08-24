@@ -9,20 +9,18 @@ import { ProfilesComponent } from './profiles/profiles.component';
 import { NotFoundComponent } from './notFound/notFound.component';
 import { ProfileComponent } from './profile/profile.component';
 
+import { ProfileService } from './services/profile.service';
 @NgModule({
-  declarations: [					
+  declarations: [
     AppComponent,
-      HomeComponent,
-      NavbarComponent,
-      ProfilesComponent,
-      NotFoundComponent,
-      ProfileComponent
-   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    HomeComponent,
+    NavbarComponent,
+    ProfilesComponent,
+    NotFoundComponent,
+    ProfileComponent,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [ProfileService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
