@@ -1,47 +1,21 @@
 import { Injectable } from '@angular/core';
+import { Profile } from '../models/profile';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProfileService {
-  profiles = [
-    {
-      name: 'Safwan Saigh',
-      imageUrl: '../assets/images/me.jpg',
-    },
-    {
-      name: 'Ahmed Saeed',
-      imageUrl: '../assets/images/me.jpg',
-    },
-    {
-      name: 'Hadi Albinsaad',
-      imageUrl: '../assets/images/me.jpg',
-    },
-    {
-      name: 'Fozan Khalawi',
-      imageUrl: '../assets/images/me.jpg',
-    },
-    {
-      name: 'Safwan Saigh',
-      imageUrl: '../assets/images/me.jpg',
-    },
-    {
-      name: 'Ahmed Saeed',
-      imageUrl: '../assets/images/me.jpg',
-    },
-    {
-      name: 'Hadi Albinsaad',
-      imageUrl: '../assets/images/me.jpg',
-    },
-    {
-      name: 'Fozan Khalawi',
-      imageUrl: '../assets/images/me.jpg',
-    },
-
-    {
-      name: 'Fozan Khalawi',
-      imageUrl: '../assets/images/me.jpg',
-    },
+  profiles: Profile[] = [
+    new Profile(
+      'safwan9f@gmail.com',
+      'Safwan Saigh',
+      '../assets/images/me.jpg'
+    ),
+    new Profile(
+      'safwan9f@gmail.com',
+      'Safwan Saigh',
+      '../assets/images/me.jpg'
+    ),
   ];
   constructor() {}
 }
