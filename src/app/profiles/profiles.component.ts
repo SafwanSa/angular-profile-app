@@ -8,6 +8,8 @@ import { ProfileService } from '../services/profile.service';
 })
 export class ProfilesComponent implements OnInit {
   profiles = [];
+  navMode = 'about';
+
   constructor(private profileService: ProfileService) {}
 
   ngOnInit() {

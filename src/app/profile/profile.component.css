@@ -1,95 +1,86 @@
-body {
-  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+.root-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 3rem 4rem;
 }
-.emp-profile {
-  padding: 3%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  border-radius: 0.5rem;
-  background: #fff;
+
+.left-side {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
-.profile-img {
-  text-align: center;
+
+.left-side img {
+  width: 100%;
+  height: auto;
 }
-.profile-img img {
-  width: 70%;
-  height: 100%;
+
+.break {
+  display: flex;
+  margin-top: 2rem;
+  color: gray;
+  justify-items: center;
+  justify-content: center;
 }
-.profile-img .file {
-  position: relative;
-  overflow: hidden;
-  margin-top: -20%;
-  width: 70%;
-  border: none;
-  border-radius: 0;
-  font-size: 15px;
-  background: #212529b8;
-}
-.profile-img .file input {
-  position: absolute;
-  opacity: 0;
-  right: 0;
-  top: 0;
-}
-.profile-head h5 {
-  color: #333;
-}
-.profile-head h6 {
-  color: #0062cc;
-}
-.profile-edit-btn {
-  border: none;
-  border-radius: 1.5rem;
-  width: 70%;
-  padding: 2%;
-  font-weight: 600;
-  color: #6c757d;
-  cursor: pointer;
-}
-.proile-rating {
+
+.break p {
   font-size: 12px;
-  color: #818182;
-  margin-top: 5%;
+  margin-top: 4px;
+  margin-right: 10px;
 }
-.proile-rating span {
-  color: #495057;
-  font-size: 15px;
-  font-weight: 600;
+
+.break hr {
+  border: 0.2px solid lightgray;
+  width: 100%;
 }
-.profile-head .nav-tabs {
-  margin-bottom: 5%;
-}
-.profile-head .nav-tabs .nav-link {
-  font-weight: 600;
-  border: none;
-}
-.profile-head .nav-tabs .nav-link.active {
-  border: none;
-  border-bottom: 2px solid #0062cc;
-}
-.profile-work {
-  padding: 14%;
-  margin-top: -15%;
-}
-.profile-work p {
-  font-size: 12px;
-  color: #818182;
-  font-weight: 600;
-  margin-top: 10%;
-}
-.profile-work a {
-  text-decoration: none;
-  color: #495057;
-  font-weight: 600;
-  font-size: 14px;
-}
-.profile-work ul {
+
+.sites,
+.skills {
   list-style: none;
+  padding-left: 0rem;
 }
-.profile-tab label {
-  font-weight: 600;
+
+.sites li,
+.skills li {
+  padding: 0.5rem;
 }
-.profile-tab p {
-  font-weight: 600;
-  color: #0062cc;
+
+.skills li {
+  font-size: 13px;
+}
+
+.left-side ul li a {
+  color: black;
+}
+
+.right-side {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+}
+
+.name {
+  margin-right: 2rem;
+}
+
+.right-side p {
+  font-size: 15px;
+  color: rgb(44, 132, 248);
+}
+
+.btn {
+  width: 20%;
+  margin-top: 1rem;
+}
+
+.nav {
+  margin-top: 2.5rem;
 }
