@@ -34,13 +34,19 @@
     <p>Web Developer</p>
     <button class="btn btn-primary">Edit Profile</button>
 
-    <ul [ngSwitch]="navMode" class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active">Contact</a>
+    <ul class="nav nav-tabs">
+      <li (click)="navMode = 'contact'" class="nav-item">
+        <a class="nav-link" [class.active]="navMode === 'contact'">Contact</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link">About</a>
+      <li (click)="navMode = 'about'" class="nav-item">
+        <a class="nav-link" [class.active]="navMode === 'about'">About</a>
       </li>
     </ul>
+
+    <div [ngSwitch]="navMode" class="nav-output">
+      <div *ngSwitchCase="'contact'" class="contact">contact part</div>
+      <div *ngSwitchCase="'about'" class="about">about part</div>
+      <app-notFound *ngSwitchDefault></app-notFound>
+    </div>
   </div>
 </div>
